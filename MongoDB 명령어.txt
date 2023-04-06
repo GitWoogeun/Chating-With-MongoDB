@@ -1,0 +1,19 @@
+MONGO DB 
+확인 방법
+
+1. cmd창에서 mongo 검색
+
+2. show dbs; 검색               
+( 들어갈  데이터 베이스 ) 찾기
+
+3. use chatdb 검색	           ( 데이터베이스에 접속 )
+   => switched to db chat   ( 데이터 베이스 변경 됨 )
+
+4. show collections             
+( 데이터베이스에 있는 컬렉션 찾기 )
+
+5. db.chat.find().pretty();    
+( 데이터베이스 chat에서 데이터를 이쁘게 정리해서 찾는다 )
+ 
+6. db.runCommand({convertToCapped: "chat", size: 8192});
+=> "chat" : 데이터베이스가 아니라 컬렉션 이름
